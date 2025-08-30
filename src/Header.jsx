@@ -7,3 +7,10 @@ function Header(){
 }
 
 export default Header
+
+
+export function Nav(){
+    return(
+        <h1>navbar</h1>
+    )
+}

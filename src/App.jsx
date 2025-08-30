@@ -1,14 +1,14 @@
-import Header from "./Header"
-function apple(){
+import Counter from './components/Counter'
+import HooksChap from './components/HooksChap'
+import StateChap from './components/StateChap'
+import Headers,{Nav} from './Header'
+const App =()=>{
   return(
-    <div>
-         <Header/>
-        
-         <h1>Hello</h1>
-        
-    </div>
-  
-  ) 
+    <>
+      {/* <StateChap /> */}
+      {/* <HooksChap /> */}
+      <Counter/>
+    </>
+  )
 }
-
-export default apple
+export default App
