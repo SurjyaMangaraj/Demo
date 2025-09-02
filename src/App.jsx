@@ -1,13 +1,34 @@
+import CollageArray from './components/CollageArray'
 import Counter from './components/Counter'
 import HooksChap from './components/HooksChap'
+import PropChap, { User } from './components/PropChap'
 import StateChap from './components/StateChap'
+import ToggleChap from './components/ToggleChap'
 import Headers,{Nav} from './Header'
 const App =()=>{
+
+  let userObj={
+    name:"surjya",
+    age:44,
+    email:"wsefwef"
+  }
+
+  let collageName=["SSS","JSG","KKI","CEB"]
+
   return(
     <>
-      {/* <StateChap /> */}
+    <div>
+        {/* <StateChap /> */}
       {/* <HooksChap /> */}
-      <Counter/>
+      {/* <Counter/>
+      <ToggleChap/>
+      <propChap/> */}
+      {/* <PropChap user={userObj}/> */}
+      <CollageArray names={collageName}/>
+    </div>
+      <User name='SURJYA'/>
+      <User  />
+     
     </>
   )
 }
