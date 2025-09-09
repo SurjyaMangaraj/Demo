@@ -26,6 +26,7 @@ const App =()=>{
       {/* <PropChap user={userObj}/> */}
       <CollageArray names={collageName}/>
     </div>
+    
       <User name='SURJYA'/>
       <User  />
      
