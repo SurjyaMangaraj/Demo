@@ -1,3 +1,4 @@
+import ArrayChap from './components/ArrayChap'
 import CollageArray from './components/CollageArray'
 import Counter from './components/Counter'
 import HooksChap from './components/HooksChap'
@@ -24,11 +25,13 @@ const App =()=>{
       <ToggleChap/>
       <propChap/> */}
       {/* <PropChap user={userObj}/> */}
-      <CollageArray names={collageName}/>
+      {/* <CollageArray names={collageName}/> */}
+      <ArrayChap />
+
     </div>
     
-      <User name='SURJYA'/>
-      <User  />
+      {/* <User name='SURJYA'/>
+      <User  /> */}
      
     </>
   )
