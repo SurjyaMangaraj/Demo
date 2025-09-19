@@ -1,4 +1,5 @@
 import ArrayChap from './components/ArrayChap'
+import Clock from './components/Clock'
 import CollageArray from './components/CollageArray'
 import Counter from './components/Counter'
 import HooksChap from './components/HooksChap'
@@ -48,6 +49,7 @@ const App =()=>{
       {/* <PropChap user={userObj}/> */}
       {/* <CollageArray names={collageName}/> */}
       <ArrayChap />
+      <Clock/>
       {
         userData.map((user)=>(
           <div>
