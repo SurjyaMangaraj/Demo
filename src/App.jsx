@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import ArrayChap from './components/ArrayChap'
 import Clock from './components/Clock'
 import Collage from './components/Collage'
@@ -10,6 +11,10 @@ import ToggleChap from './components/ToggleChap'
 import UseEffectChap from './components/UseEffectChap'
 import Headers,{Nav} from './Header'
 const App =()=>{
+
+  const [count,setCount]=useState(0);
+  const [data, setData]=useState(0);
+  const [display, setDisplay]=useState(true);
 
   const collageData=[
     {
@@ -96,7 +101,15 @@ const App =()=>{
     
       {/* <User name='SURJYA'/>
       <User  /> */}
-     
+
+      {/*----------- lifecycle of React --------------*/}
+      {
+        display? <Counter count={count} data={data} />:null
+      }
+         <button onClick={()=>setCount(count+1)}>Counter</button>
+         <button onClick={()=>setData(data+1)}>Data</button>
+         <button onClick={()=>setDisplay(!display)}>Toggle</button>
+       
     </>
   )
 }

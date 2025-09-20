@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-const Counter=()=>{
     const Counter=({count,data})=>{
 
         useEffect(()=>{
@@ -12,16 +11,15 @@ const Counter=()=>{
         },[count])
 
         useEffect(()=>{
-            
-        })
+            console.log("unmounting phase only")
+        },[data,count])
 
-    }
+   
     return(
         <div>
-             <h1>Counter:{count}</h1>
-             <h1>RCount:{rcount}</h1>
-             <button onClick={()=>setCount(count+1)}>Update Count</button>
-             <button onClick={()=>setRcount(rcount-1)}>Update Rcount</button>
+            
+             <h1>Counter value{count}</h1>
+             <h2>Data Valu{data}</h2>
         </div>
     )
 }
