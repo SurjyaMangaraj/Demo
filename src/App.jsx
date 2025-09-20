@@ -7,6 +7,7 @@ import HooksChap from './components/HooksChap'
 import PropChap, { User } from './components/PropChap'
 import StateChap from './components/StateChap'
 import ToggleChap from './components/ToggleChap'
+import UseEffectChap from './components/UseEffectChap'
 import Headers,{Nav} from './Header'
 const App =()=>{
 
@@ -74,21 +75,22 @@ const App =()=>{
     <div>
         {/* <StateChap /> */}
       {/* <HooksChap /> */}
-      {/* <Counter/>
-      <ToggleChap/>
+       <Counter/>
+     {/* <ToggleChap/>
       <propChap/> */}
       {/* <PropChap user={userObj}/> */}
       {/* <CollageArray names={collageName}/> */}
       {/* <ArrayChap /> */}
       {/* <Clock/> */}
-      {
+      {/* {
       collageData.map((collage,index)=>(
             <div key={index}>
               <Collage collage={collage}/>
               
             </div>
       ))
-    }
+    } */}
+    {/* <UseEffectChap/> */}
 
     </div>
     

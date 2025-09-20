@@ -1,8 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Counter=()=>{
-    const[count,setCount]=useState(0)
-    const[rcount,setRcount]=useState(10)
+    const Counter=({count,data})=>{
+
+        useEffect(()=>{
+            console.log("mounting phase only")
+        },[])
+
+        useEffect(()=>{
+            console.log("updating phase only")
+        },[count])
+
+        useEffect(()=>{
+            
+        })
+
+    }
     return(
         <div>
              <h1>Counter:{count}</h1>
