@@ -1,5 +1,6 @@
 import ArrayChap from './components/ArrayChap'
 import Clock from './components/Clock'
+import Collage from './components/Collage'
 import CollageArray from './components/CollageArray'
 import Counter from './components/Counter'
 import HooksChap from './components/HooksChap'
@@ -8,6 +9,36 @@ import StateChap from './components/StateChap'
 import ToggleChap from './components/ToggleChap'
 import Headers,{Nav} from './Header'
 const App =()=>{
+
+  const collageData=[
+    {
+      name:"CEB",
+      city: "bbsr",
+      website: "www.ceb.com",
+      student: [{
+        name: "surjya",
+        age: 22,
+        email: "surjya@gmail.com"
+      },{
+        name: "surjya",
+        age: 22,
+        email: "surjya@gmail.com"
+      }]
+    }, {
+      name:"KIIT",
+      city: "bbsr",
+      website: "www.kiit.com",
+      student: [{
+        name: "anil",
+        age: 22,
+        email: "anil@gmail.com"
+      },{
+        name: "surjya",
+        age: 22,
+        email: "surjya@gmail.com"
+      }]
+    }
+  ]
 
   const userData=[
     {
@@ -48,15 +79,16 @@ const App =()=>{
       <propChap/> */}
       {/* <PropChap user={userObj}/> */}
       {/* <CollageArray names={collageName}/> */}
-      <ArrayChap />
-      <Clock/>
+      {/* <ArrayChap /> */}
+      {/* <Clock/> */}
       {
-        userData.map((user)=>(
-          <div>
-            
-          </div>
-        ))
-      }
+      collageData.map((collage,index)=>(
+            <div key={index}>
+              <Collage collage={collage}/>
+              
+            </div>
+      ))
+    }
 
     </div>
     
