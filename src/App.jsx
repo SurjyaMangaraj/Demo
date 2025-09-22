@@ -10,6 +10,7 @@ import StateChap from './components/StateChap'
 import ToggleChap from './components/ToggleChap'
 import UseEffectChap from './components/UseEffectChap'
 import Headers,{Nav} from './Header'
+import { Uncontrolled } from './components/Uncontrolled'
 const App =()=>{
 
   const [count,setCount]=useState(0);
@@ -80,7 +81,7 @@ const App =()=>{
     <div>
         {/* <StateChap /> */}
       {/* <HooksChap /> */}
-       <Counter/>
+       {/* <Counter/> */}
      {/* <ToggleChap/>
       <propChap/> */}
       {/* <PropChap user={userObj}/> */}
@@ -103,12 +104,16 @@ const App =()=>{
       <User  /> */}
 
       {/*----------- lifecycle of React --------------*/}
-      {
+      {/* {
         display? <Counter count={count} data={data} />:null
       }
          <button onClick={()=>setCount(count+1)}>Counter</button>
          <button onClick={()=>setData(data+1)}>Data</button>
-         <button onClick={()=>setDisplay(!display)}>Toggle</button>
+         <button onClick={()=>setDisplay(!display)}>Toggle</button> */}
+           {/*----------- lifecycle of React End --------------*/}
+       <Uncontrolled/>
+
+
        
     </>
   )
