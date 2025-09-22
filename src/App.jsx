@@ -12,6 +12,7 @@ import UseEffectChap from './components/UseEffectChap'
 import Headers,{Nav} from './Header'
 import { Uncontrolled } from './components/Uncontrolled'
 const App =()=>{
+  
 
   const [count,setCount]=useState(0);
   const [data, setData]=useState(0);
