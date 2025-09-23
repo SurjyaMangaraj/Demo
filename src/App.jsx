@@ -11,6 +11,7 @@ import ToggleChap from './components/ToggleChap'
 import UseEffectChap from './components/UseEffectChap'
 import Headers,{Nav} from './Header'
 import { Uncontrolled } from './components/Uncontrolled'
+import DrivedComponent from './components/DrivedComponent'
 const App =()=>{
   
 
@@ -77,6 +78,17 @@ const App =()=>{
 
   let collageName=["SSS","JSG","KKI","CEB"]
 
+  {/*----------- pass function as component as props --------------*/}
+        const displayName=(name)=>{
+          alert(name);
+        }
+
+        const getUser=()=>{
+             alert("get user function called")
+        }
+
+  {/*----------- pass function as component as props  END --------------*/}
+
   return(
     <>
     <div>
@@ -112,7 +124,18 @@ const App =()=>{
          <button onClick={()=>setData(data+1)}>Data</button>
          <button onClick={()=>setDisplay(!display)}>Toggle</button> */}
            {/*----------- lifecycle of React End --------------*/}
-       <Uncontrolled/>
+       {/* <Uncontrolled/> */}
+
+       {/*----------- pass function as component as props --------------*/}
+         {/* <h1>Call Parent component function from child component</h1>
+         <User displayName={displayName} name='Surjya' onClick={getUser}/>
+         <User displayName={displayName} name='Papi' onClick={getUser}/>
+         <User displayName={displayName} name='Anil' onClick={getUser}/>
+         <User displayName={displayName} name='Dilu' onClick={getUser}/> */}
+
+       {/*----------- pass function as component as props  END --------------*/}
+
+       <DrivedComponent/>
 
 
        
