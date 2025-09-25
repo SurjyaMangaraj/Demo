@@ -14,6 +14,7 @@ import { Uncontrolled } from './components/Uncontrolled'
 import DrivedComponent from './components/DrivedComponent'
 import LiftingUserA from './components/LiftingUserA'
 import LiftingUserB from './components/LiftingUserB'
+import UseActionState from './components/UseActionState'
 const App =()=>{
   
 
@@ -141,9 +142,11 @@ const App =()=>{
        <DrivedComponent/>
 
        {/*----------- Lifting State Up in React js   --------------*/}
-             <LiftingUserA setUser={setUser}/>
-             <LiftingUserB user={user}/>
+             {/* <LiftingUserA setUser={setUser}/>
+             <LiftingUserB user={user}/> */}
        {/*----------- Lifting State Up in React js  END --------------*/}
+
+       <UseActionState/>
 
 
        
