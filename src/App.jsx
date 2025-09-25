@@ -12,12 +12,15 @@ import UseEffectChap from './components/UseEffectChap'
 import Headers,{Nav} from './Header'
 import { Uncontrolled } from './components/Uncontrolled'
 import DrivedComponent from './components/DrivedComponent'
+import LiftingUserA from './components/LiftingUserA'
+import LiftingUserB from './components/LiftingUserB'
 const App =()=>{
   
 
   const [count,setCount]=useState(0);
   const [data, setData]=useState(0);
   const [display, setDisplay]=useState(true);
+  const [user,setUser]=useState('')
 
   const collageData=[
     {
@@ -136,6 +139,11 @@ const App =()=>{
        {/*----------- pass function as component as props  END --------------*/}
 
        <DrivedComponent/>
+
+       {/*----------- Lifting State Up in React js   --------------*/}
+             <LiftingUserA setUser={setUser}/>
+             <LiftingUserB user={user}/>
+       {/*----------- Lifting State Up in React js  END --------------*/}
 
 
        
